@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 40px;
+    background: #573cf0;
+    height: 100px;
+    font-family: 'roboto',sans-serif;
+}
+
+.logo {
+    width: 120px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu a:hover{
+    color: black;
+    transition: 0.7 all;
+}
+
+/*SEÇÃO DE SERVIÇOS*/
+
+.titulo-servicos {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #222;
+    font-family: 'roboto', sans-serif;
+}
+.titulo-servicos h6{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #222;
+    font-family: 'roboto', sans-serif;
+}
+.servicos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;  
+    margin: 50px auto;
+    width: 90%;
+}
+
+.servicos article {
+    text-align: center;
+    width: 300px; 
+}
+
+.servicos article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;  
+    border-radius: 10px;
+}
+
+.servicos article h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-family: 'roboto', sans-serif;
+    
+}
+
+.servicos article p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #444;
+}
+
+
+.titulo-trabalho {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #222;
+    font-family: 'roboto', sans-serif;
+}
+
+/* ======== MEDIA QUERIES ======== */
+
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .home, .sobre, .contatos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 40px auto;
+    }
+
+    .home-img, .sobre-img, .contato-imagem img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .home p, .sobre p {
+        padding: 40px 20px;
+        font-size: 16px;
+    }
+
+    .servicos {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .servicos article {
+        width: 45%;
+    }
+
+    #moldura {
+        width: 80%;
+    }
+
+    .grupoBotao {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .home h1, .sobre h1, .titulo-servicos, .titulo-trabalho, .contatos-container h1 {
+        font-size: 24px;
+    }
+
+    .home p, .sobre p {
+        padding: 30px 15px;
+        font-size: 14px;
+    }
+
+    .servicos article {
+        width: 100%;
+    }
+
+    .home-img, .sobre-img, .contato-imagem img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .grupoBotao {
+        gap: 10px;
+    }
+
+    .frase-final {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .contatos-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 16px;
+    }
+
+    .home h1, .sobre h1, .titulo-servicos, .titulo-trabalho, .contatos-container h1 {
+        font-size: 20px;
+    }
+
+    .home p, .sobre p {
+        font-size: 13px;
+        padding: 20px 10px;
+    }
+
+    .frase-final {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}

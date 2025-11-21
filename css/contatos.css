@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 40px;
+    background: #573cf0;
+    height: 100px;
+    font-family: 'roboto',sans-serif;
+}
+
+.logo {
+    width: 120px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu a:hover{
+    color: black;
+    transition: 0.7 all;
+}
+
+/*SEÇÃO DE CONTATOS*/
+
+.contatos-container h1 {
+    font-family: 'roboto';
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contatos-container p {
+    font-family: 'lato';
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 10px;
+}
+.contato-lista {
+    list-style: none;
+    padding: 0;
+    width: 320px;       
+    margin: 30px auto;  
+}
+
+.contato-lista li {
+    margin-bottom: 25px;
+}
+
+.contato-lista a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.contato-icone {
+    width: 50px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.contato-lista a {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: black; 
+}
+
+.contato-icone {
+    width: 30px; 
+    height: 30px;
+    margin-right: 15px;
+    object-fit: contain; 
+}
+
+.contato-detalhe {
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contatos-container {
+    display: flex;
+     align-items: center;
+    justify-content: flex-start; 
+    gap: 200px;                   
+    margin: 70px auto;
+    width: 90%;                   
+    max-width: 1500px;
+}
+.contato-imagem img {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    margin-top: 20px;
+    
+}
+.frase-final {
+    background: #f0f0f0;
+    padding: 20px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 40px auto;
+}
+footer {
+    background: #573cf0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 350px;
+    font-size: 16px;
+}
+
+/* ======== MEDIA QUERIES ======== */
+
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .home, .sobre, .contatos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 40px auto;
+    }
+
+    .home-img, .sobre-img, .contato-imagem img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .home p, .sobre p {
+        padding: 40px 20px;
+        font-size: 16px;
+    }
+
+    .servicos {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .servicos article {
+        width: 45%;
+    }
+
+    #moldura {
+        width: 80%;
+    }
+
+    .grupoBotao {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .home h1, .sobre h1, .titulo-servicos, .titulo-trabalho, .contatos-container h1 {
+        font-size: 24px;
+    }
+
+    .home p, .sobre p {
+        padding: 30px 15px;
+        font-size: 14px;
+    }
+
+    .servicos article {
+        width: 100%;
+    }
+
+    .home-img, .sobre-img, .contato-imagem img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .grupoBotao {
+        gap: 10px;
+    }
+
+    .frase-final {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .contatos-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 16px;
+    }
+
+    .home h1, .sobre h1, .titulo-servicos, .titulo-trabalho, .contatos-container h1 {
+        font-size: 20px;
+    }
+
+    .home p, .sobre p {
+        font-size: 13px;
+        padding: 20px 10px;
+    }
+
+    .frase-final {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
